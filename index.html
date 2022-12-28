@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/css-bootstrap.min.css">
+<link rel="stylesheet" href="css/css-flaticon.css">
+<link rel="stylesheet" href="css/css-remixicon.css">
+<link rel="stylesheet" href="css/css-owl.carousel.min.css">
+<link rel="stylesheet" href="css/css-fancybox.css">
+<link rel="stylesheet" href="css/css-jquery-ui-min.css">
+<link rel="stylesheet" href="css/css-aos.css">
+<link rel="stylesheet" href="css/css-style.css">
+<link rel="stylesheet" href="css/css-dark-theme.css">
+<link rel="stylesheet" href="css/css-responsive.css">
+<title>Mach - Learn | IEEE SPS</title>
+<link rel="icon" type="image/png" href="favicons/logo.jpeg">
+</head>
+<body class="bg-russian">
+
+<div class="loader js-preloader">
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+
+<div class="switch-theme-mode">
+<label id="switch" class="switch">
+<input type="checkbox" onchange="toggleTheme()" id="slider">
+<span class="slider round"></span>
+</label>
+</div>
+
+
+<div class="page-wrapper">
+
+<header class="header-wrap style1">
+<div class="container">
+<nav class="navbar navbar-expand-md navbar-light">
+<a class="navbar-brand" href="index.html">
+<img src="images/ieee_web1.png" alt="logo">
+</a>
+<div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+<div class="menu-close d-lg-none">
+<a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+</div>
+<ul class="navbar-nav ms-auto text-center">
+<li class="nav-item">
+<a href="#" class="nav-link active">
+Home
+
+</a>
+</li>
+<li class="nav-item">
+<a href="#about" class="nav-link">
+About 
+</a>
+</li>
+<li class="nav-item">
+<a href="#speakers" class="nav-link">
+Speakers
+
+</a>
+
+</li>
+<li class="nav-item">
+<a href="#schedule" class="nav-link">
+Schedule
+
+</a>
+</li>
+<li class="nav-item">
+<a href="#collaborators" class="nav-link">
+Collaborators
+
+</a>
+</li>
+<li class="nav-item">
+<a href="#connect" class="nav-link">Contact Us</a>
+</li>
+</ul>
+<div class="others-options  md-none">
+<div class="header-btn">
+<a class="navbar-brand" href="index.html">
+<img src="images/ieeesps_web.png" alt="logo">
+</a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</header>
+
+
+<section class="hero-wrap style1">
+<img src="images/hero-hero-shape-1.png" alt="Image" class="hero-shape-one">
+<div class="container">
+<div class="row align-items-center gx-5">
+<div class="col-lg-6 text-center">
+<div class="hero-content">
+
+<h1 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">MACH LEARN</h1>
+<span data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">A 2 day workshop on Machine Learning</span>
+<p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Come Join Us on 27th January 2022</p>
+<div class="hero-btn" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+    <!-- Display the countdown timer in an element -->
+<p style="font-size:3rem;" id="demo" class="neonText"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 27, 2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<a href="login.html" class="btn style1">Register Now</a>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="hero-img-slider owl-carousel">
+
+<div class="nft-item">
+<span class="featured">Workshops</span>
+<img src="images/hero-nft-slider-1.png" alt="Image">
+<div class="nft-info-wrap">
+<div class="nft-info">
+</div>
+<div class="nft-bid">
+<button type="button" class="btn style1" data-bs-toggle="modal" data-bs-target="#placeBid">Grab Your Seats Now</button>
+</div>
+</div>
+</div>
+<div class="nft-item">
+<span class="featured">Workshops</span>
+<img src="images/h1.jpg" alt="Image">
+<div class="nft-info-wrap">
+<div class="nft-info">
+</div>
+<div class="nft-bid">
+<button type="button" class="btn style1" data-bs-toggle="modal" data-bs-target="#placeBid">Grab Your Seats Now</button>
+</div>
+</div>
+</div>
+<div class="nft-item">
+<span class="featured">Culturals</span>
+<img src="images/h2.png" alt="Image">
+<div class="nft-info-wrap">
+<div class="nft-info">
+</div>
+<div class="nft-bid">
+<button type="button" class="btn style1" data-bs-toggle="modal" data-bs-target="#placeBid">Grab Your Seats Now</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="about" class="hw-wrap ptb-100">
+<img src="images/img-section-shape-1.png" alt="Image" class="section-shape">
+<div class="container">
+<div class="row align-items-center gx-5">
+<div class="col-xxl-6 col-xl-5 col-lg-5" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+<div class="hw-img-wrap">
+<img class="hw-img-two" src="images/h1.jpg" alt="Image">
+</div>
+</div>
+<div class="col-xxl-6 col-xl-7 col-lg-7" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+<div class="hw-content">
+<div class="content-title style1 mb-40">
+<span>About</span>
+<h2>Mach Learn</h2>
+</div>
+<div class="row justify-content-center">
+<div class="col-xl-12 col-lg-12">
+<div class="hw-card">
+<p>SIGNAL is the signature and most anticipated flagship event of IEEE SPS Kerala Chapter co-hosted by Viswajyothi College of Engineering and Technology (VJCET) from 13th May 2022- to 15th May 2022. The 3-day extravaganza is filled with amazing speakers, networking sessions, and cultural nights. Students from various Student Branches can come together to foster technological innovation and discover new ideas. The event will be the hub of networking, relationship building, and learning. The event includes inspiring keynotes and uses case-focused sessions to help you meet today’s technology challenges while preparing for tomorrow’s opportunities. Moreover, it connects you to renowned personalities in the respective field of Engineering & Technology.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="promo-video-wrap ptb-100">
+<div class="container">
+<img src="images/img-shape-2.png" alt="Image" class="promo-shape-one">
+<img src="images/img-shape-1.png" alt="Image" class="promo-shape-two">
+<div class="section-title style1 text-center mb-40">
+<span>Meet Our </span>
+<h2>Co-Host</h2>
+</div>
+<div class="row">
+<div class="col-xl-10 offset-xl-1">
+<div class="promo-video bg-f">
+<span class="promo-video-text"><img src="images/logo.png" alt="Image">Mar Athanasius College of Engineering Kothamangalam</span>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12">
+<div class="hw-card">
+<p>Mar Athanasius College of Engineering pioneered engineering education in central Kerala in 1961. Managed by Mar Athanasius College Association, Aided by the Government of Kerala, the college was first in Asia under Christian Management. The college is affiliated to APJ Abdul Kalam Technological University. MACE, as it is popularly known, has grown by leaps and bounds since. It now has six full-fledged departments apart from the two auxiliary departments of Mathematics and Science and Humanities.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<section id="speakers" class="auction-filter-wrap ptb-100">
+<div class="container">
+<div class="section-title style1 text-center mb-50">
+<h2>Meet Our Speakers</h2>
+</div>
+<div class="row justify-content-center grid auction-filter">
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 mix art">
+<div class="auction-card style3">
+    <div class="auction-img">
+<img src="images/s2.png" alt="Image">
+</div>
+<div class="auction-info-wrap">
+<div class="auction-author-info">
+<div class="author-info">
+<div class="author-img">
+<img src="images/author-author-7.jpg" alt="Image">
+</div>
+<div class="author-name">
+ <h6><a href="https://www.linkedin.com/in/naeema-ziyad/">Naeema Ziyad</a></h6>
+</div>
+</div>
+</div>
+<button type="button" class="btn style5" data-bs-toggle="modal" data-bs-target="#placeBid"><i class="flaticon-linkedin"></i></button>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 mix art">
+<div class="auction-card style3">
+    <div class="auction-img">
+<img src="images/s1.png" alt="Image">
+</div>
+<div class="auction-info-wrap">
+<div class="auction-author-info">
+<div class="author-info">
+<div class="author-img">
+<img src="images/author-author-4.jpg" alt="Image">
+</div>
+<div class="author-name">
+ <h6><a href="https://www.linkedin.com/in/naeema-ziyad/">Alwafa Ziyad</a></h6>
+</div>
+</div>
+</div>
+<button type="button" class="btn style5" data-bs-toggle="modal" data-bs-target="#placeBid"><i class="flaticon-linkedin"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="register" class="auction-filter-wrap ptb-100">
+<div class="container">
+<div class="section-title style1 text-center mb-50">
+<h2>Grab Your Seats</h2>
+</div>
+<div class="row justify-content-center grid auction-filter">
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 mix art">
+<div class="auction-card style3">
+    <div class="auction-img">
+<img src="images/t1.jpg" alt="Image">
+</div>
+<div class="auction-info-wrap">
+<div class="auction-author-info">
+<div class="author-info">
+    <div class="author-img">
+</div>
+<div class="author-name text-center">
+ <h6><a href="#">IEEE SPS Members</a></h6>
+</div>
+</div>
+<div class="auction-bid">
+<span class="item-popularity">Rs 1000</span>
+</div>
+</div>
+<button type="button" class="btn style5" data-bs-toggle="modal" data-bs-target="#">Register Now</i></button>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 mix art">
+<div class="auction-card style3">
+    <div class="auction-img">
+<img src="images/t1.jpg" alt="Image">
+</div>
+<div class="auction-info-wrap">
+<div class="auction-author-info">
+<div class="author-info">
+    <div class="author-img">
+</div>
+<div class="author-name text-center">
+ <h6><a href="#">IEEE Members</a></h6>
+</div>
+</div>
+
+<div class="auction-bid">
+<span class="item-popularity">Rs 1200</span>
+</div>
+</div>
+<button type="button" class="btn style5" data-bs-toggle="modal" data-bs-target="#">Register Now</i></button>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 mix art">
+<div class="auction-card style3">
+    <div class="auction-img">
+<img src="images/t1.jpg" alt="Image">
+</div>
+<div class="auction-info-wrap">
+<div class="auction-author-info">
+<div class="author-info">
+<div class="author-img">
+</div>
+<div class="author-name text-center">
+ <h6><a href="#">Non IEEE Members</a></h6>
+</div>
+</div>
+<div class="auction-bid">
+<span class="item-popularity">Rs 1400</span>
+</div>
+</div>
+<button type="button" class="btn style5" data-bs-toggle="modal" data-bs-target="#">Register Now</i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="schedule" class="seller-wrap pt-100 pb-75">
+<img src="images/img-section-shape-1.png" alt="Image" class="section-shape">
+<div class="container">
+<div class="row  mb-40 align-items-center text-center">
+<div class="col-md-12">
+<div class="section-title style1">
+<span>Event</span>
+<h2>Schedule</h2>
+</div>
+</div>
+</div>
+<div class="row  mb-40 align-items-center text-center">
+<div class="col-md-12">
+<div class="section-title style1">
+<span>Day 1</span>
+<h2></h2>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="#">Registration</a></h3>
+<p>09:00 AM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="#">Networking Session</a></h3>
+<p>10:00 AM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="#">Workshop Session 1</a></h3>
+<p>11:00 AM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="#">Lunch</a></h3>
+<p>12:00 PM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="author-profile.html">Workshop Session 2</a></h3>
+<p>01:00 PM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="author-profile.html">Tea Break</a></h3>
+<p>03:00 PM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="author-profile.html">Culturals</a></h3>
+<p>05:00 PM</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="row  mb-40 align-items-center text-center">
+<div class="col-md-12">
+<div class="section-title style1">
+<span>Day 2</span>
+<h2></h2>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="#">Registration</a></h3>
+<p>09:00 AM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="#">Networking Session</a></h3>
+<p>10:00 AM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="#">Workshop Session 1</a></h3>
+<p>11:00 AM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="#">Lunch</a></h3>
+<p>12:00 PM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="author-profile.html">Workshop Session 2</a></h3>
+<p>01:00 PM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="author-profile.html">Tea Break</a></h3>
+<p>03:00 PM</p>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+<div class="seller-card">
+<div class="seller-info">
+<h3><a href="author-profile.html">Culturals</a></h3>
+<p>05:00 PM</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="text-center mt-10 mb-25 d-md-none">
+<a href="authors.html" class="btn style1">View All Sellers</a>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section id="collaborators" class="collection-wrap pt-100 pb-75">
+<img src="images/img-section-shape-1.png" alt="Image" class="section-shape">
+<div class="container">
+<div class="row">
+<div class="col-lg-9">
+<div class="section-title style1 mb-40">
+<span></span>
+<h2>Our Collaborators</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="collection-slider owl-carousel">
+<div class="auction-card style4">
+<div class="auction-img">
+<img src="images/logo.png" alt="Image">
+</div>
+</div>
+<div class="auction-card style4">
+<div class="auction-img">
+<img src="images/macesb_web.png" alt="Image">
+</div>
+</div>
+<div class="auction-card style4">
+<div class="auction-img">
+<img src="images/ieee_web.png" alt="Image">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="category-wrap ptb-100">
+<div class="container">
+<div class="section-title style1 text-center mb-40">
+<h2>Culturals</h2>
+</div>
+<div class="category-slider owl-carousel">
+<div class="category-card">
+<div class="collection-img-wrap style2">
+<a href="item-details.html" class="collection-img">
+<img src="images/c1.jpg" alt="Image">
+</a>
+<a href="item-details.html" class="collection-img">
+<img src="images/c1.jpg" alt="Image">
+</a>
+<a href="item-details.html" class="collection-img">
+<img src="images/c1.jpg" alt="Image">
+</a>
+<a href="item-details.html" class="collection-img">
+<img src="images/c1.jpg" alt="Image">
+</a>
+<a href="item-details.html" class="collection-img">
+<img src="images/c1.jpg" alt="Image">
+</a>
+<a href="item-details.html" class="collection-img">
+<img src="images/c1.jpg" alt="Image">
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<footer id="connect" class="footer-wrap bg-f pt-100 ">
+<img src="images/img-section-shape-1.png" alt="Image" class="section-shape">
+<div class="container">
+<div class="row pb-75">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 pe-xl-5">
+<div class="footer-widget">
+<a href="index.html" class="footer-logo">
+<img src="images/ieee_web1.png" alt="Image">
+</a>
+<p class="comp-desc">
+IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+</p>
+<ul class="social-profile list-style style1">
+<li>
+<a target="_blank" href="https://m.facebook.com/people/Sps-Keralachapter/100071804958435">
+<i class="flaticon-facebook"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.instagram.com/ieeespskerala/">
+<i class="flaticon-instagram"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.linkedin.com/company/ieee-sps-kerala-section/mycompany/">
+ <i class="flaticon-linkedin"></i>
+</a>
+</li>
+</ulflaticon-linkedin>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+<div class="footer-widget">
+<h3 class="footer-widget-title">Quick-Links</h3>
+<ul class="footer-menu list-style">
+<li>
+<a href="https://www.ieee.org//" target="_blank">
+<i class="flaticon-next-1"></i>
+IEEE
+</a>
+</li>
+<li>
+<a href="https://signalprocessingsociety.org/" target="_blank">
+<i class="flaticon-next-1"></i>
+IEEE Signal Processing Society
+</a>
+</li>
+<li>
+<a href="https://sps.ieeekerala.org/" target="_blank">
+<i class="flaticon-next-1"></i>
+IEEE SPS Kerala Chapter
+</a>
+</li>
+<li>
+<a href="https://ieeekerala.org/" target="_blank">
+<i class="flaticon-next-1"></i>
+IEEE Kerala Section
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<p class="copyright-text">
+<i class="ri-copyright-line"></i><script>document.write(new Date().getFullYear())</script> <span>Mach - Learn | IEEE </span>. All Rights Reserved <br>Made with &hearts; by <a href="https://www.linkedin.com/in/naeema-ziyad/" target="_blank">Naeema Ziyad</a>
+</p>
+</div>
+</footer>
+
+</div>
+
+
+
+
+<a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
+
+
+<script src="js/js-jquery.min.js"></script>
+<script src="js/js-bootstrap.bundle.min.js"></script>
+<script src="js/js-form-validator.min.js"></script>
+<script src="js/js-contact-form-script.js"></script>
+<script src="js/js-aos.js"></script>
+<script src="js/js-owl.carousel.min.js"></script>
+<script src="js/js-jquery.countdown.min.js"></script>
+<script src="js/js-jquery-ui-min.js"></script>
+<script src="js/js-fancybox.js"></script>
+<script src="js/js-mixitup.min.js"></script>
+<script src="js/js-jquery.appear.js"></script>
+<script src="js/js-tweenmax.min.js"></script>
+<script src="js/js-main.js"></script>
+</body>
+</html>
